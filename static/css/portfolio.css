@@ -1,0 +1,372 @@
+html {
+    font-size: 62.5%;
+    -webkit-font-smoothing: antialiased;
+    font-smooth: antialiased;
+}
+
+* {
+    font-family: Courier New, Courier, monospace;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+li {
+    list-style-type: none;
+    padding: 0.5rem;
+}
+
+dl {
+    margin: 0.5rem;
+    padding: 2rem;
+}
+
+dt {
+    font-size: 2rem;
+    margin: 1%;
+}
+
+dd {
+    font-size: 2.35rem;
+    padding: 0.5%;
+    margin-left: 16.9%;
+}
+
+img {
+    width: 90%;
+}
+
+.hideScroll{
+    display: hidden;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+#me {
+    display: grid;
+    padding: 0 9% 0 9%; 
+    grid-template-areas: 
+    " home home "
+    " nav nav "
+    " content side-nav"
+    " footer footer ";
+    height: 100vh;
+    width: 100vw;    
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 10fr;
+    grid-gap: 1rem;
+    grid-auto-rows: auto;
+}
+
+#loading {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    justify-content: center;
+    padding-top: 20%;
+    display: none;
+    height: 100vh;
+}
+
+#loading > center > p {
+    font-size: 4vmin;
+    margin-bottom: 1.5rem;
+}
+
+#home {
+    grid-area: home;
+    margin-top: 19rem;
+    height: 100vh;
+}
+
+#home > span {
+    font-size: 17rem;
+    vertical-align: middle;
+}
+
+#home > span + span {
+    font-size: 21rem;
+
+}
+
+#home > p {
+    font-size: 7rem;
+    margin: 5% 0 7% 11%;
+}
+
+#home svg {
+    margin-left: 40vw;
+    -webkit-animation-name: wiggle;
+    -ms-animation-name: wiggle;
+    -ms-animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -ms-animation-timing-function: linear;
+}
+
+@-webkit-keyframes wiggle {
+    0% {-webkit-transform: rotate(5deg);}
+    25% {-webkit-transform: rotate(-5deg);}
+    50% {-webkit-transform: rotate(-5deg);}
+    75% {-webkit-transform: rotate(5deg);}
+    100% {-webkit-transform:rotate(5deg);}
+}
+  
+@-ms-keyframes wiggle {
+    0% {-ms-transform: rotate(5deg);}
+    25% {-ms-transform: rotate(-5deg);}
+    50% {-ms-transform: rotate(-5deg);}
+    75% {-ms-transform: rotate(5deg);}
+    100% {-ms-transform: rotate(5deg);}
+}
+  
+@keyframes wiggle {
+    0% {transform: rotate(5deg);}
+    25% {transform: rotate(-5deg);}
+    50% {transform: rotate(-5deg);}
+    75% {transform: rotate(5deg);}
+    100% {transform: rotate(5deg);}
+}
+
+#nav{
+    grid-area: nav;
+    display: none;
+}
+
+#content {
+    grid-area: content;
+}
+
+.title p {
+    font-size: 3rem;
+}
+
+.sub-content {
+    margin-left: 11% !important;
+}
+
+.project-base {
+    margin-top: 1.75rem;
+    font-size: 3rem;
+}
+
+.project-content {
+    margin-left: 3%;
+}
+
+#pic {
+    width: 40%;
+    height: auto;
+}
+
+.inline {
+    font-size: 2.5rem;
+    margin-top: 3%;
+}
+
+.fa-address-card {
+    vertical-align: text-top;
+    color: black;
+    margin-left: 3%;
+}
+
+#about-me {
+    grid-area: content;
+    padding-top: 3%;
+    height: auto;
+}
+
+#my-projects {
+    grid-area: content;
+    padding-top: 3%;
+}
+
+.project-content dl dd {
+    margin-left: 12rem;
+}
+
+.project-content dl dd ul li {
+    font-size: 2.35rem;
+}
+
+.slider{
+    width: 85%;
+}
+
+#contact-me {
+    margin-top: 3%;
+}
+
+#side-nav {
+    grid-area: side-nav;
+    align-self: center;
+    font-size: 2rem;
+    display: none;
+}
+
+#side-nav li {
+    margin-left: 25%;
+    list-style-type: none;
+}
+
+.fixed {
+    position: fixed;
+    top: 35%;
+    right: 9%;
+}
+
+#footer {
+    grid-area: footer;
+    margin-left: -2%;
+}
+
+#footer > span {
+    font-size: 21rem;
+}
+
+#footer > span + span {
+    font-size: 17rem;
+    margin-left: -3%;
+}
+
+/* Handheld devices */
+@media (max-width: 600px){
+
+    #home {
+        grid-area: home;
+        margin-top: 55%;
+    }
+
+    #home > span {
+        font-size: 9vmin;
+        vertical-align: middle;
+    }
+
+    #home > span + span {
+        font-size: 15vmin;
+    }
+
+    #home > p {
+        font-size: 4.5vmin;
+        margin: 5% 0 7% 11%;
+    }
+
+    #home svg {
+        margin-left: 45%;
+        height: 11vw;
+    }
+
+    #me {
+        display: grid;
+        padding: 0 5% 0 5%; 
+        grid-template-areas: 
+        " home home"
+        " nav nav"
+        " content content "
+        " footer footer";
+        height: 100vh;
+        width: 100vw;    
+        grid-auto-rows: auto;
+    }
+
+    #side-nav {
+        display: none;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    dl {
+        margin: 0.25rem;
+        padding: 1rem;
+    }
+
+    dt {
+        font-size: 1.75rem;
+    }
+
+    dd {
+        font-size: 1.55rem;
+    }
+
+    img {
+        width: 90%;
+    }
+
+    #about-me {
+        height: auto;
+    }
+
+    #my-projects {
+        margin-top: 5%;
+        height: auto;
+    }
+
+    #pic {
+        width: 90%;
+        height: auto;
+    }
+
+    .inline {
+        font-size: 1.75rem;
+    }
+
+    .sub-content {
+        margin-left: 2% !important;
+    }
+
+    .fa-address-card {
+        margin-left: 5%;
+    }
+
+    .project-content dl dd {
+        margin-left: 15%;
+    }
+
+    .project-content dl dd ul li {
+        font-size: 1.55rem;
+    }
+
+    .project-base {
+        font-size: 2rem;
+    }
+
+    .project-base li {
+        font-size: 1.75rem;
+        margin-left: 3%;
+    }
+
+    #contact-me {
+        margin-top: 7%;
+    }
+
+    #footer > span {
+        font-size: 15vmin;
+        margin-left: -3%;
+    }
+
+    #footer > span + span {
+        font-size: 11vmin;
+    }
+
+    #footer > p {
+        font-size: 0.5rem;
+        margin-left: -3%;
+    }
+
+}
+
+@media (min-width: 600px) {
+
+}
