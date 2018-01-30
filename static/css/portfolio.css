@@ -28,7 +28,7 @@ dl {
 }
 
 dt {
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 1%;
 }
 
@@ -61,7 +61,6 @@ img {
     height: 100vh;
     width: 100vw;    
     grid-template-columns: 70% 30%;
-    grid-template-rows: 10fr;
     grid-gap: 1rem;
     grid-auto-rows: auto;
 }
@@ -170,14 +169,13 @@ img {
 }
 
 .inline {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-top: 3%;
 }
 
 .fa-address-card {
     vertical-align: text-top;
     color: black;
-    margin-left: 3%;
 }
 
 #about-me {
@@ -367,6 +365,80 @@ img {
 
 }
 
-@media (min-width: 600px) {
+/* Tablet portrait */
+@media (min-width: 600px) and (max-width: 900px) {
 
+    dl {
+        width: 100%;
+    }
+
+    dt {
+        font-size: 2.75rem;
+    }
+
+    #me {
+        grid-template-areas:
+        "home home"
+        "nav nav"
+        "content content"
+        "footer footer";
+    }
+
+    #side-nav {
+        display: none;
+    }
+
+    #home > span {
+        font-size: 7rem;
+    }
+
+    #home > span + span {
+        font-size: 11rem;
+    }
+
+    #home > p {
+        font-size: 3rem;
+        margin: 5% 0 10% 11%;
+    }
+
+    .sub-content dl {
+        margin-left: -10%;
+    }
+
+    #pic {
+        width: 90%;
+        height: auto;
+    }
+
+    img {
+        width: 75%;
+        height: auto;
+    }
+
+    .project-base {
+        font-size: 3rem;
+    }
+
+    .project-content dl dt {
+        margin-left: 7%;
+    }
+
+    .project-content dl dd {
+        margin-left: 15%;
+    }
+
+    #contact-me dd li {
+        font-size: 2.3rem;
+        margin-left: -0.5%;
+    }
+
+    #footer > span {
+        font-size: 11rem;
+    }
+
+    #footer > span + span {
+        font-size: 7rem;
+        margin-left: -3%;
+        vertical-align: baseline;
+    }
 }

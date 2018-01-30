@@ -1,7 +1,6 @@
 if( !sessionStorage.hasVisited ) {
     $('#loading').css('display', 'block');
     setTimeout( function() {
-        console.log("timeout block", sessionStorage.hasVisited, typeof sessionStorage.hasVisited);
         sessionStorage.hasVisited = true;
         $('#loading').slideUp();
     }, 2300)
@@ -23,7 +22,6 @@ var sticky = (navbar.offsetTop + window.screen.height) * 0.8;
 
 // Add (Remove sticky class) if you (dont) pass the nav bar
 function stickyNav() {
-    console.log(window.screen.width);
     var isSticky = $('#side-nav').hasClass('fixed')
     if (window.pageYOffset >= sticky && !isSticky) {
         $('#side-nav').fadeIn("fast");
