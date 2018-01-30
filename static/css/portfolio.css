@@ -1,3 +1,8 @@
+@font-face{
+    font-family: helveticaBold;
+    src: url(HelveticaBold.tff)
+}
+
 html {
     font-size: 62.5%;
     -webkit-font-smoothing: antialiased;
@@ -5,7 +10,7 @@ html {
 }
 
 * {
-    font-family: Helvetica Bold, Courier New, Courier, monospace;
+    font-family: heveticaBold, "Courier New", "Courier", monospace;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
