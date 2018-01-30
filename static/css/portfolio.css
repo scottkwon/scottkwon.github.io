@@ -38,10 +38,6 @@ dd {
     margin-left: 16.9%;
 }
 
-/* img {
-    width: 90%;
-} */
-
 .hideScroll{
     display: hidden;
 }
@@ -164,7 +160,7 @@ dd {
 }
 
 #pic {
-    width: 40%;
+    width: 50%;
     height: auto;
 }
 
@@ -197,8 +193,8 @@ dd {
     font-size: 2.35rem;
 }
 
-.slider{
-    width: 85%;
+#wstd{
+    width: 100%;
 }
 
 #contact-me {
@@ -238,7 +234,7 @@ dd {
 }
 
 /* Handheld devices */
-@media (max-width: 599px){
+@media (max-width: 600px){
 
     #home {
         grid-area: home;
@@ -366,7 +362,7 @@ dd {
 }
 
 /* Tablet portrait */
-@media (min-width: 600px) and (max-width: 899px) {
+@media (min-width: 600px) and (max-width: 900px) {
 
     dl {
         width: 100%;
