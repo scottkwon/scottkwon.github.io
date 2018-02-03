@@ -7,7 +7,7 @@ if( !sessionStorage.hasVisited ) {
 }
 
 // When the user scrolls the page, execute stickyNav 
-if (window.innerWidth >= 1100) {
+if (window.innerWidth >= 1024) {
     window.onscroll = function() { 
         stickyNav()
     };
