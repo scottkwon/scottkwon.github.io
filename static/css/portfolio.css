@@ -38,6 +38,10 @@ dd {
     margin-left: 16.9%;
 }
 
+img {
+    image-rendering: -webkit-optimize-contrast;
+}
+
 .hideScroll{
     display: hidden;
 }
@@ -83,7 +87,7 @@ dd {
 }
 
 #home > span {
-    font-size: 15vmin;
+    font-size: 13vmin;
     vertical-align: middle;
 }
 
@@ -93,7 +97,7 @@ dd {
 }
 
 #home > p {
-    font-size: 7vmin;
+    font-size: 3.5vmax;
     margin: 5% 0 7% 11%;
 }
 
