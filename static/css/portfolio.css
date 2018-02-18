@@ -1,503 +1,529 @@
 html {
-    font-size: 62.5%;
-    -webkit-font-smoothing: antialiased;
-    font-smooth: antialiased;
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+  font-smooth: antialiased;
 }
 
 * {
-    font-family: Courier New, Courier, monospace;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  font-family: Courier New, Courier, monospace;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-    text-decoration: none;
-    cursor: pointer;
-    color: black;
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
 }
 
 li {
-    list-style-type: none;
-    padding: 0.5rem;
+  list-style-type: none;
+  padding: 0.5rem;
 }
 
 dl {
-    margin: 0.5rem;
-    padding: 2rem;
+  margin: 0.5rem;
+  padding: 2rem;
 }
 
 dt {
-    font-size: 3rem;
-    margin: 1%;
+  font-size: 3rem;
+  margin: 1%;
 }
 
 dd {
-    font-size: 2.35rem;
-    padding: 0.5%;
-    margin-left: 16.9%;
+  font-size: 2.35rem;
+  padding: 0.5%;
+  margin-left: 16.9%;
 }
 
 img {
-    image-rendering: -webkit-optimize-contrast;
+  image-rendering: -webkit-optimize-contrast;
 }
 
-.hideScroll{
-    display: hidden;
+.hideScroll {
+  display: hidden;
 }
 
-::-webkit-scrollbar{
-    display: none;
+::-webkit-scrollbar {
+  display: none;
 }
 
 #me {
-    display: grid;
-    padding: 0 9% 0 9%; 
-    grid-template-areas: 
-    " home home "
-    " nav nav "
-    " content side-nav "
-    " footer footer ";
-    height: 100vh;
-    width: 100vw;    
-    grid-template-columns: 70% 30%;
-    grid-gap: 1rem;
-    grid-auto-rows: auto;
+  display: grid;
+  padding: 0 9% 0 9%;
+  grid-template-areas:
+    ' home home '
+    ' nav nav '
+    ' content side-nav '
+    ' footer footer ';
+  height: 100vh;
+  width: 100vw;
+  grid-template-columns: 70% 30%;
+  grid-gap: 1rem;
+  grid-auto-rows: auto;
 }
 
 #loading {
-    -webkit-flex-direction: column;
-    flex-direction: column;
-    -webkit-justify-content: center;
-    justify-content: center;
-    padding-top: 20%;
-    display: none;
-    height: 100vh;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  justify-content: center;
+  padding-top: 20%;
+  display: none;
+  height: 100vh;
 }
 
 #loading > center > p {
-    font-size: 4vmin;
-    margin-bottom: 1.5rem;
+  font-size: 4vmin;
+  margin-bottom: 1.5rem;
 }
 
 #home {
-    grid-area: home;
-    margin-top: 19rem;
-    height: 100vh;
+  grid-area: home;
+  margin-top: 19rem;
+  height: 100vh;
 }
 
 #home > span {
-    font-size: 13vmin;
-    vertical-align: middle;
+  font-size: 13vmin;
+  vertical-align: middle;
 }
 
 #home > span + span {
-    font-size: 21vmin;
-
+  font-size: 21vmin;
 }
 
 #home > p {
-    font-size: 3.5vmax;
-    margin: 5% 0 7% 11%;
+  font-size: 4vmax;
+  margin: 5% 0 7% 11%;
 }
 
 #home svg {
-    margin-left: 45%;
-    font-size: 6vmin;
-    -webkit-animation-name: wiggle;
-    -ms-animation-name: wiggle;
-    -ms-animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-iteration-count: infinite;
-    -ms-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -ms-animation-timing-function: linear;
+  margin-left: 45%;
+  font-size: 6vmin;
+  -webkit-animation-name: wiggle;
+  -ms-animation-name: wiggle;
+  -ms-animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
 }
 
 @-webkit-keyframes wiggle {
-    0% {-webkit-transform: rotate(5deg);}
-    25% {-webkit-transform: rotate(-5deg);}
-    50% {-webkit-transform: rotate(-5deg);}
-    75% {-webkit-transform: rotate(5deg);}
-    100% {-webkit-transform:rotate(5deg);}
-}
-  
-@-ms-keyframes wiggle {
-    0% {-ms-transform: rotate(5deg);}
-    25% {-ms-transform: rotate(-5deg);}
-    50% {-ms-transform: rotate(-5deg);}
-    75% {-ms-transform: rotate(5deg);}
-    100% {-ms-transform: rotate(5deg);}
-}
-  
-@keyframes wiggle {
-    0% {transform: rotate(5deg);}
-    25% {transform: rotate(-5deg);}
-    50% {transform: rotate(-5deg);}
-    75% {transform: rotate(5deg);}
-    100% {transform: rotate(5deg);}
+  0% {
+    -webkit-transform: rotate(5deg);
+  }
+  25% {
+    -webkit-transform: rotate(-5deg);
+  }
+  50% {
+    -webkit-transform: rotate(-5deg);
+  }
+  75% {
+    -webkit-transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(5deg);
+  }
 }
 
-#nav{
-    grid-area: nav;
-    display: none;
+@-ms-keyframes wiggle {
+  0% {
+    -ms-transform: rotate(5deg);
+  }
+  25% {
+    -ms-transform: rotate(-5deg);
+  }
+  50% {
+    -ms-transform: rotate(-5deg);
+  }
+  75% {
+    -ms-transform: rotate(5deg);
+  }
+  100% {
+    -ms-transform: rotate(5deg);
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(5deg);
+  }
+  25% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
+
+#nav {
+  grid-area: nav;
+  display: none;
 }
 
 #content {
-    grid-area: content;
+  grid-area: content;
 }
 
 .title p {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 .sub-content {
-    margin-left: 11% !important;
+  margin-left: 11% !important;
 }
 
 .project-base {
-    margin-top: 1.75rem;
-    font-size: 3rem;
+  margin-top: 1.75rem;
+  font-size: 3rem;
 }
 
 .project-content {
-    margin-left: 3%;
+  margin-left: 3%;
 }
 
 #pic {
-    width: 50%;
-    height: auto;
+  width: 50%;
+  height: auto;
 }
 
 .inline {
-    font-size: 2rem;
-    margin-top: 3%;
+  font-size: 2rem;
+  margin-top: 3%;
 }
 
 .fa-address-card {
-    vertical-align: text-top;
-    color: black;
+  vertical-align: text-top;
+  color: black;
 }
 
 #about-me {
-    grid-area: content;
-    padding-top: 3%;
-    height: auto;
+  grid-area: content;
+  padding-top: 3%;
+  height: auto;
 }
 
 #my-projects {
-    grid-area: content;
-    padding-top: 3%;
+  grid-area: content;
+  padding-top: 3%;
 }
 
 .project-content dl dd {
-    margin-left: 12rem;
+  margin-left: 12rem;
 }
 
 .project-content dl dd ul li {
-    font-size: 2.35rem;
+  font-size: 2.35rem;
 }
 
-#wstd{
-    width: 100%;
+#wstd {
+  width: 100%;
 }
 
 #contact-me {
-    margin-top: 3%;
+  margin-top: 3%;
 }
 
 #side-nav {
-    grid-area: side-nav;
-    align-self: center;
-    font-size: 2rem;
-    display: none;
+  grid-area: side-nav;
+  align-self: center;
+  font-size: 2rem;
+  display: none;
 }
 
 #side-nav li {
-    margin-left: 25%;
-    list-style-type: none;
+  margin-left: 25%;
+  list-style-type: none;
 }
 
 .fixed {
-    position: fixed;
-    top: 35%;
-    right: 9%;
+  position: fixed;
+  top: 35%;
+  right: 9%;
 }
 
 #footer {
-    grid-area: footer;
-    margin-left: -2%;
+  grid-area: footer;
+  margin-left: -2%;
 }
 
 #footer > span {
-    font-size: 21rem;
+  font-size: 21vmin;
 }
 
 #footer > span + span {
-    font-size: 17rem;
-    margin-left: -3%;
+  font-size: 17vmin;
+  margin-left: -3%;
 }
 
 /* Handheld devices */
-@media (max-width: 599px){
+@media (max-width: 599px) {
+  #home {
+    grid-area: home;
+    margin-top: 19rem;
+  }
 
-    #home {
-        grid-area: home;
-        margin-top: 55%;
-    }
+  #home > span {
+    font-size: 9vmin;
+    vertical-align: middle;
+  }
 
-    #home > span {
-        font-size: 9vmin;
-        vertical-align: middle;
-    }
+  #home > span + span {
+    font-size: 15vmin;
+  }
 
-    #home > span + span {
-        font-size: 15vmin;
-    }
+  #home > p {
+    font-size: 4.5vmin;
+    margin: 5% 0 7% 11%;
+  }
 
-    #home > p {
-        font-size: 4.5vmin;
-        margin: 5% 0 7% 11%;
-    }
+  #home svg {
+    margin-left: 45%;
+    height: 11vw;
+  }
 
-    #home svg {
-        margin-left: 45%;
-        height: 11vw;
-    }
+  #me {
+    display: grid;
+    padding: 0 5% 0 5%;
+    grid-template-areas:
+      ' home home '
+      ' nav nav '
+      ' content content '
+      ' footer footer ';
+    height: 100vh;
+    width: 100vw;
+    grid-auto-rows: auto;
+  }
 
-    #me {
-        display: grid;
-        padding: 0 5% 0 5%; 
-        grid-template-areas: 
-        " home home "
-        " nav nav "
-        " content content "
-        " footer footer ";
-        height: 100vh;
-        width: 100vw;    
-        grid-auto-rows: auto;
-    }
+  #side-nav {
+    display: none;
+  }
 
-    #side-nav {
-        display: none;
-    }
+  .title {
+    font-size: 2rem;
+  }
 
-    .title {
-        font-size: 2rem;
-    }
+  dl {
+    margin: 0.25rem;
+    padding: 1rem;
+  }
 
-    dl {
-        margin: 0.25rem;
-        padding: 1rem;
-    }
+  dt {
+    font-size: 1.75rem;
+  }
 
-    dt {
-        font-size: 1.75rem;
-    }
+  dd {
+    font-size: 1.55rem;
+  }
 
-    dd {
-        font-size: 1.55rem;
-    }
+  img {
+    width: 90%;
+  }
 
-    img {
-        width: 90%;
-    }
+  #about-me {
+    height: auto;
+  }
 
-    #about-me {
-        height: auto;
-    }
+  #my-projects {
+    margin-top: 5%;
+    height: auto;
+  }
 
-    #my-projects {
-        margin-top: 5%;
-        height: auto;
-    }
+  #pic {
+    width: 90%;
+    height: auto;
+  }
 
-    #pic {
-        width: 90%;
-        height: auto;
-    }
+  .inline {
+    font-size: 1.75rem;
+  }
 
-    .inline {
-        font-size: 1.75rem;
-    }
+  .sub-content {
+    margin-left: 2% !important;
+  }
 
-    .sub-content {
-        margin-left: 2% !important;
-    }
+  .fa-address-card {
+    margin-left: 5%;
+  }
 
-    .fa-address-card {
-        margin-left: 5%;
-    }
+  .project-content dl dd {
+    margin-left: 15%;
+  }
 
-    .project-content dl dd {
-        margin-left: 15%;
-    }
+  .project-content dl dd ul li {
+    font-size: 1.55rem;
+  }
 
-    .project-content dl dd ul li {
-        font-size: 1.55rem;
-    }
+  .project-base {
+    font-size: 2rem;
+  }
 
-    .project-base {
-        font-size: 2rem;
-    }
+  .project-base li {
+    font-size: 1.75rem;
+    margin-left: 3%;
+  }
 
-    .project-base li {
-        font-size: 1.75rem;
-        margin-left: 3%;
-    }
+  #contact-me {
+    margin-top: 7%;
+  }
 
-    #contact-me {
-        margin-top: 7%;
-    }
+  #footer > span {
+    font-size: 15vmin;
+    margin-left: -3%;
+  }
 
-    #footer > span {
-        font-size: 15vmin;
-        margin-left: -3%;
-    }
+  #footer > span + span {
+    font-size: 11vmin;
+  }
 
-    #footer > span + span {
-        font-size: 11vmin;
-    }
-
-    #footer > p {
-        font-size: 0.5rem;
-        margin-left: -3%;
-    }
-
+  #footer > p {
+    font-size: 0.5rem;
+    margin-left: -3%;
+  }
 }
 
 /* Tablet portrait */
 @media (min-width: 600px) and (max-width: 900px) {
+  dl {
+    width: 100%;
+  }
 
-    dl {
-        width: 100%;
-    }
+  dt {
+    font-size: 2.75rem;
+  }
 
-    dt {
-        font-size: 2.75rem;
-    }
+  #me {
+    grid-template-areas:
+      'home home'
+      'nav nav'
+      'content content'
+      'footer footer';
+  }
 
-    #me {
-        grid-template-areas:
-        "home home"
-        "nav nav"
-        "content content"
-        "footer footer";
-    }
+  #side-nav {
+    display: none;
+  }
 
-    #side-nav {
-        display: none;
-    }
+  #home > span {
+    font-size: 9vmin;
+  }
 
-    #home > span {
-        font-size: 10vmin;
-    }
+  #home > span + span {
+    font-size: 15vmin;
+  }
 
-    #home > span + span {
-        font-size: 13vmin;
-    }
+  #home > p {
+    font-size: 4.1vmin;
+    margin: 5% 0 11% 11%;
+  }
 
-    #home > p {
-        font-size: 4vmin;
-        margin: 5% 0 10% 11%;
-    }
+  .sub-content dl {
+    margin-left: -10%;
+  }
 
-    .sub-content dl {
-        margin-left: -10%;
-    }
+  #pic {
+    width: 90%;
+    height: auto;
+  }
 
-    #pic {
-        width: 90%;
-        height: auto;
-    }
+  #wstd {
+    width: 94%;
+  }
 
-    #wstd {
-        width: 94%;
-    }
+  .edenosPic {
+    margin-right: 0;
+    width: 90%;
+    height: auto;
+  }
 
-    .edenosPic {
-        margin-right: 0;
-        width: 90%;
-        height: auto;
-    }
+  .project-base {
+    font-size: 3rem;
+  }
 
-    .project-base {
-        font-size: 3rem;
-    }
+  .project-content dl dt {
+    margin-left: 7%;
+  }
 
-    .project-content dl dt {
-        margin-left: 7%;
-    }
+  .project-content dl dd {
+    margin-left: 15%;
+  }
 
-    .project-content dl dd {
-        margin-left: 15%;
-    }
+  #contact-me dd li {
+    font-size: 2.3rem;
+    margin-left: -0.5%;
+  }
 
-    #contact-me dd li {
-        font-size: 2.3rem;
-        margin-left: -0.5%;
-    }
+  #footer > span {
+    font-size: 15vmin;
+  }
 
-    #footer > span {
-        font-size: 11rem;
-    }
-
-    #footer > span + span {
-        font-size: 7rem;
-        margin-left: -3%;
-        vertical-align: baseline;
-    }
+  #footer > span + span {
+    font-size: 11vmin;
+    margin-left: -3%;
+    vertical-align: baseline;
+  }
 }
 
 /* Tablet landscape / Small laptop */
-@media (min-width: 900px) and (max-width:1199px){
-    #me {
-        grid-template-areas:
-        " home home "
-        " nav nav "
-        " content side-nav "
-        " footer footer ";
-    }
+@media (min-width: 901px) and (max-width: 1199px) {
+  #me {
+    grid-template-areas:
+      ' home home '
+      ' nav nav '
+      ' content side-nav '
+      ' footer footer ';
+  }
 
-    #home > span {
-        font-size: 9rem;
-        vertical-align: middle;
-    }
+  #home > span {
+    font-size: 9rem;
+    vertical-align: middle;
+  }
 
-    #home > span + span {
-        font-size: 13rem;
-    }
+  #home > span + span {
+    font-size: 15rem;
+  }
 
-    #home > p {
-        font-size: 4vmin;
-    }
+  #home > p {
+    font-size: 3.8vmax;
+  }
 
-    #home svg {
-        margin-left: 45%;
-    }
+  #home svg {
+    margin-left: 45%;
+  }
 
-    #pic {
-        width: 75%;
-    }
+  #pic {
+    width: 75%;
+  }
 
-    #wstd {
-        width: 100%;
-        height: auto;
-    }
+  #wstd {
+    width: 100%;
+    height: auto;
+  }
 
-    .edenosPic {
-        width: 90%;
-    }
+  .edenosPic {
+    width: 90%;
+  }
 
-    .project-content dl dd {
-        margin-left: 13%;
-    }
+  .project-content dl dd {
+    margin-left: 13%;
+  }
 
-    #footer > span {
-        font-size: 9rem;
-    }
+  #footer > span {
+    font-size: 15vmin;
+  }
 
-    #footer > span + span {
-        font-size: 8rem;
-    }
+  #footer > span + span {
+    font-size: 11vmin;
+  }
 }
